@@ -1,0 +1,15 @@
+$link-color: #555;
+
+.NavigationItem {
+  box-sizing: border-box;
+  display: block;
+  padding: 8px;
+  color: $link-color;
+  margin: 0px 10px;
+  text-shadow: 2px 2px 4px #aaa;
+  
+  &.Active {
+    color: $link-color;
+    border-bottom: 2px solid rgb(54, 1, 138);
+  }
+}

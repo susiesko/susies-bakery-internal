@@ -1,0 +1,33 @@
+@import './themes/default';
+
+body {
+  background: rgb(230, 216, 255);
+  color: #555;
+}
+
+// view-attributes: 
+@mixin view-attributes {
+  width: $view-size;
+  padding: $view-padding;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+.Header {
+  height: $header-height;
+  background: white;
+
+  header {
+    @include view-attributes;
+    height: 100%;
+  }
+}
+
+.Content {  
+  @include view-attributes;
+  margin-top: $header-height;
+}
+
+.Footer {
+  @include view-attributes;
+}

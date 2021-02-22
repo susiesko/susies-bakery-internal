@@ -5,9 +5,13 @@ import './index.css';
 import App from './App/App';
 import reportWebVitals from './reportWebVitals';
 
-import 'primereact/resources/themes/bootstrap4-light-blue/theme.css';
+import { scrollListenerStart } from './utils/scroll';
+
+import 'primereact/resources/themes/md-light-indigo/theme.css';
 import 'primeflex/primeflex.css';
 import './css/style.scss';
+
+scrollListenerStart();
 
 ReactDOM.render(
   <React.StrictMode>

@@ -1,0 +1,12 @@
+.Recipes {
+  margin-left: -10px;
+  margin-right: -10px;
+
+  > * {
+    background: none !important;
+  }
+
+  .Recipe{
+    margin: 10px;
+  }
+}

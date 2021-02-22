@@ -7,9 +7,9 @@ import classes from './NavigationItems.module.scss';
 const NavigationItems = () => {
   const navItems = [
     {
-      to: '/products',
+      to: '/recipes',
       exact: true,
-      text: 'Products'  
+      text: 'Recipes'  
     },
     {
       to: '/ingredients',
@@ -22,7 +22,7 @@ const NavigationItems = () => {
     <ul className={classes.NavigationItems}>
       { navItems.map(item => {
         return (
-          <li>
+          <li key={Math.random() * 100}>
             <NavigationItem {...item}/>
           </li>
         );

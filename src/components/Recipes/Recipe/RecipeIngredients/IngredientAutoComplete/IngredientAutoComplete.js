@@ -29,7 +29,6 @@ const IngredientAutoComplete = props => {
   }
   
   return (
-    <FloatLabel>        
       <InputGroup>
         <AutoComplete 
           id="ingredientSearch"
@@ -38,11 +37,11 @@ const IngredientAutoComplete = props => {
           suggestions={filteredIngredients}
           completeMethod={searchIngredients}
           onChange={(ev) => setSelectedIngredient(ev.value)}
+          placeholder="Add Ingredient"
         />
+        {/* <label htmlFor="ingredientSearch">Ingredient Search</label> */}
         <InputGroupAddon>+</InputGroupAddon>
       </InputGroup>    
-      <label htmlFor="ingredientSearch">Ingredient Search</label>
-    </FloatLabel>
   );
 }
 

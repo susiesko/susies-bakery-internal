@@ -1,7 +1,7 @@
 @import './themes/default';
 
 body {
-  background: rgb(230, 216, 255);
+  background: white;
   color: #555;
 }
 
@@ -13,25 +13,22 @@ body {
   margin: auto;
 }
 
-html:not([data-scroll='0']) {
-	
-	// body {
-	//   padding-top: 3em;
-	// }
-	
+html:not([data-scroll='0']) {	
 	.Header {
 		position: fixed;
 		top: 0;
     width: 100%;
+    z-index: 9999;
 		//box-shadow: 0 0 .5em rgba(0, 0, 0, .5);
-	}
-	
+	}	
 }
 
 .Header {
   height: $header-height;
   background: white;
   display: flex;
+  
+  background: rgb(230, 216, 255);
   
   header {    
     @include view-attributes;

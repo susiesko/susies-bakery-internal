@@ -2,33 +2,33 @@
 
 const ingredientsList = [
   {
-    id: Math.random() * 100,
+    id: 1,
     name: 'cream cheese'
   },
   {
-    id: Math.random() * 100,
+    id: 2,
     name: 'sugar'
   },
   {
-    id: Math.random() * 100,
+    id: 3,
     name: 'sour cream'
   },
   {
-    id: Math.random() * 100,
+    id: 4,
     name: 'vanilla extract'
   },
   {
-    id: Math.random() * 100,
+    id: 5,
     name: 'egg',
     plural: 'eggs'
   },
   {
-    id: Math.random() * 100,
+    id: 6,
     name: 'graham cracker',
     plural: 'graham crackers'
   },
   {
-    id: Math.random() * 100,
+    id: 7,
     name: 'butter'
   }
 ];

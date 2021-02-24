@@ -28,7 +28,6 @@ export const scrollListenerStart = () => {
   // so we can use it in our stylesheets
   const storeScroll = () => {
     document.documentElement.dataset.scroll = window.scrollY;
-    console.log(window.scrollY);
   }
 
   // Listen for new scroll events, here we debounce our `storeScroll` function

@@ -7,6 +7,7 @@ import reportWebVitals from './reportWebVitals';
 
 import { scrollListenerStart } from './utils/scroll';
 
+import 'primereact/resources/primereact.css';
 import 'primereact/resources/themes/md-light-indigo/theme.css';
 import 'primeflex/primeflex.css';
 import './css/style.scss';

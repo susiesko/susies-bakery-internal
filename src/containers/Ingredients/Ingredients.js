@@ -2,7 +2,7 @@ import React from 'react';
 import { DataTable } from 'primereact/datatable';
 import { Column } from 'primereact/column';
 
-import ingredientsList from './ingredients-data';
+import ingredientsList from '../../components/Ingredients/ingredients-data';
 
 const Ingredients = () => {
   // get ingredients list (temporarily dummy data from JS file)

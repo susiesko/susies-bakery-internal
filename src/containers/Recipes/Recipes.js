@@ -29,7 +29,7 @@ const Products = () => {
   return (
     <React.Fragment>
       <div>
-        <Button>
+        <Button className={classes.Button}>
           <NavLink to="/recipes/new">New Recipe</NavLink>
         </Button>
       </div>

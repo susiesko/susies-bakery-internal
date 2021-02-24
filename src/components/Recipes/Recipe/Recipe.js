@@ -1,21 +1,14 @@
 import React, { useState } from 'react';
-import { InputText } from 'primereact/inputtext';
-import { Dropdown } from 'primereact/dropdown';
-import { Button } from 'primereact/button';
+import { Card } from 'primereact/card';
 
-import ingredientsList from '../../../containers/Ingredients/ingredients-data';
+import RecipeForm from './RecipeForm/RecipeForm';
 
 const Recipe = () => {
-  const [name, setName] = useState('');
-
   return (
-    <div>
-      <label htmlFor="name">Name</label>
-      <InputText inputId="name" value={name} onChange={(ev) => setName(ev.target.value)} />
-      <label htmlFor="ingredientsList">Ingredients</label>
-      <Dropdown options={ingredientsList} optionLabel="name" optionValue="id"/>
-      <Button>Save</Button>
-    </div>
+    <Card style={{width: '80%', margin: 'auto'}} className="p-shadow-5">
+      <h1 style={{marginTop: '0px'}}>New Recipe</h1>
+      <RecipeForm/>
+    </Card>
   );
 }
 
